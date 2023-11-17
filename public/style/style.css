@@ -4,11 +4,30 @@
 
 /* BODY */
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    background-color: #0D1117;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 /* HEADER */
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #010409;
+}
 
+.navbar {
+    color: #E6EDF3;
+    padding: 30px 10%;
+}
 
 /* MAIN */
 
@@ -16,6 +35,27 @@
 
 /* FOOTER */
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #010409;
+}
 
+.footerText {
+    color: #E6EDF3;
+    padding: 30px 10%;
+}
 
 /* RESPONSIVE */
+@media(max-width: 708px) {
+    .navbar h1 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .footerText p {
+        font-size: 12px;
+        text-align: center;
+    }
+}
