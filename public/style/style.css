@@ -1,6 +1,9 @@
 /* FONTS */
 
-
+@font-face {
+    font-family: "jumperBlodItalic";
+    src: url("../src/fonts/jumperBlodItalic.ttf");
+}
 
 /* BODY */
 
@@ -20,23 +23,34 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 10vh;
+    border-bottom: 3px solid #FBEC5D;
     background-color: #010409;
 }
 
 .navbar {
-    color: #E6EDF3;
+    font-family: "jumperBlodItalic";
+    color: #7F00FF;
     padding: 30px 10%;
 }
 
 /* MAIN */
 
 main {
-    height: 100vh;
+    height: 80vh
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px
 }
 
 h2 {
-    color: #E6EDF3;
+    font-family: "jumperBlodItalic";
+    color: #7F00FF;
 }
 
 /* FOOTER */
@@ -45,7 +59,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 10vh;
+    border-top: 3px solid #FBEC5D;
     background-color: #010409;
 }
 
