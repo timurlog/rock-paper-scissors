@@ -36,11 +36,11 @@ header {
 
 /* MAIN */
 
-main {
-    height: 80vh
-}
+/* main {
+    height: 100vh
+} */
 
-.mainSection {
+.weaponSection {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -48,7 +48,7 @@ main {
     padding: 20px
 }
 
-h2 {
+h2, h3 {
     font-family: "jumperBlodItalic";
     padding-top: 20px;
     color: #7F00FF;
@@ -80,6 +80,70 @@ h2 {
     color: #E6EDF3;
 }
 
+/* SCORES */
+
+.scoresSection {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10%;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.scoreBox {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 200px;
+    width: 200px;
+    border: #FBEC5D solid 3px;
+    border-radius: 50px;
+}
+
+.scoreBox p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: #7F00FF;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: #FBEC5D 2px 2px 2px;
+}
+
+.resultSection p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: #FBEC5D;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.playAgain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.playAgain button {
+    background-color: #FBEC5D;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+}
+
+.playAgain button:hover {
+    background-color: #7F00FF;
+    color: #E6EDF3;
+}
+
 /* FOOTER */
 
 footer {
@@ -105,5 +169,9 @@ footer {
     .footerText p {
         font-size: 12px;
         text-align: center;
+    }
+    .scoreBox {
+        height: 150px;
+        width: 150px;
     }
 }
