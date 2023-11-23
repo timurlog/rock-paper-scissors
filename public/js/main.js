@@ -10,16 +10,49 @@ function getComputerChoice() {
 }
 
 // PlayerChoice function
-function getPlayerChoice() {
-    let j = prompt("Enter rock, paper or scissors").toLowerCase();
+// function getPlayerChoice() {
+    // let j = prompt("Enter rock, paper or scissors").toLowerCase();
 
-    if (j == "rock" || j == "paper" || j == "scissors") {
-        return j;
-    } else {
-        alert("Error");
-        return getPlayerChoice();
-    }
-}
+    // if (j == "rock" || j == "paper" || j == "scissors") {
+    //     return j;
+    // } else {
+    //     alert("Error");
+    //     return getPlayerChoice();
+    // }
+
+// }
+
+// let rock = document.querySelector("#rock");
+// rock.addEventListener("click", () => {
+//     console.log('rock');
+//     playRound("rock", getComputerChoice());
+// })
+// let paper = document.querySelector("#paper");
+// paper.addEventListener("click", () => {
+//     console.log('paper')
+//     playRound("rock", getComputerChoice());
+// })
+// let scissors = document.querySelector("#scissors");
+// scissors.addEventListener("click", () => {
+//     console.log('scissors')
+//     playRound("rock", getComputerChoice());
+// })
+
+var rock = document.querySelector("#rock");
+rock.addEventListener("click", () => {
+    console.log('rock');
+    playRound("rock", getComputerChoice());
+})
+var paper = document.querySelector("#paper");
+paper.addEventListener("click", () => {
+    console.log('paper')
+    playRound("paper", getComputerChoice());
+})
+var scissors = document.querySelector("#scissors");
+scissors.addEventListener("click", () => {
+    console.log('scissors')
+    playRound("scissors", getComputerChoice());
+})
 
 // Play a round function
 function playRound(playerSelection, computerSelection) {
@@ -49,13 +82,14 @@ function playRound(playerSelection, computerSelection) {
 
 // Game function
 function game() {
-    let playerScore = 0;
-    let computerScore = 0;
+    var playerScore = 0;
+    var computerScore = 0;
 
     for (let round = 0; round < 5; round++) {
-        var computerSelection = getComputerChoice();
-        var playerSelection = getPlayerChoice();
-        var result = playRound(playerSelection, computerSelection);
+
+        // var computerSelection = getComputerChoice();
+        // var playerSelection = getPlayerChoice();
+        // var result = playRound(playerSelection, computerSelection);
 
         if (result == "player") {
             playerScore++;
@@ -78,4 +112,4 @@ function game() {
 }
 
 // Start the game
-// game();
+game();
