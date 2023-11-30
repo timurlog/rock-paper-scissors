@@ -72,7 +72,7 @@ h2, h3 {
     border: none;
     cursor: pointer;
     border-radius: 50px;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 .allButton button:hover {
@@ -103,7 +103,7 @@ h2, h3 {
     border-radius: 50px;
 }
 
-.scoreBox p {
+.scoreBox .scorela {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     color: #7F00FF;
