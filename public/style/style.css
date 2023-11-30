@@ -84,7 +84,7 @@ h2, h3 {
 
 .scoresSection {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 10%;
     align-items: center;
     padding-left: 10%;
