@@ -42,8 +42,8 @@ function playRound(playerSelection, computerSelection) {
         
             playerScore = 0;
             computerScore = 0;
-            // playerScorePara.textContent = "0";
-            // computerScorePara.textContent = "0";
+            playerScorePara.textContent = "0";
+            computerScorePara.textContent = "0";
             reponse.innerHTML = "WAITING FOR PLAYER CHOICE";
 
             rock.addEventListener("click", onClickHandler);
@@ -95,8 +95,12 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-// Handler pour les boutons
-function onClickHandler() {
-    var playerSelection = this.id;
-    playRound(playerSelection, getComputerChoice());
-}
+let replay = document.querySelector("#replay");
+replay.addEventListener("click", () => {
+    playerScore = 0;
+    computerScore = 0;
+    tieScore = 0;
+    reponse.innerHTML = "WAITING FOR PLAYER CHOICE"
+    playerScorePara.textContent = `${playerScore}`
+    computerScorePara.textContent = `${computerScore}`
+})
